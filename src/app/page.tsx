@@ -1,10 +1,10 @@
-import AletheiaHero from '@/components/ui/hero'
+import { ParticleHero } from '@/components/ui/particle-hero'
 import AllSections from '@/components/blocks/sections'
 
 export default function Home() {
   return (
     <main>
-      <AletheiaHero />
+      <ParticleHero />
       <AllSections />
     </main>
   )
