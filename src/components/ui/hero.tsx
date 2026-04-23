@@ -35,7 +35,6 @@ export default function AletheiaHero() {
         className="absolute inset-0 w-full h-full"
         colors={['#718281', '#3d4f4e', '#2a3b38', '#1a2e2b', '#09120d']}
         speed={0.18}
-        backgroundColor="#09120d"
       />
 
       {/* ── Vignette overlay ── */}
