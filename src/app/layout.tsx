@@ -2,12 +2,12 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'Aletheia — Clinical Precision in Biological Restoration',
+  title: 'Aletheia — Medicina Funcional de Precisão',
   description:
-    'Medicina funcional de precisão para mulheres que funcionam — mas que já não se reconhecem. Dra. Catarina Veiga.',
+    'Medicina funcional de precisão para mulheres que funcionam — mas que já não se reconhecem. Catarina Veiga.',
   openGraph: {
-    title: 'Aletheia — Clinical Precision in Biological Restoration',
-    description: 'Os seus exames estão todos bons. Mas você sabe que algo não está.',
+    title: 'Aletheia — Medicina Funcional de Precisão',
+    description: 'Os teus exames estão todos bons. Mas tu sabes que algo não está.',
     locale: 'pt_PT',
     type: 'website',
   },
