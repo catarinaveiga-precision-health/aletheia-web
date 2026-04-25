@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from 'react'
 import { MeshGradient } from '@paper-design/shaders-react'
-import { motion } from 'framer-motion'
+import { motion } from 'motion/react'
 import { Menu, X } from 'lucide-react'
 
 const NAV_ITEMS = [
