@@ -26,7 +26,7 @@ const features = [
 export function AppSection() {
   return (
     <Section warm>
-      <Eyebrow number="03">A app Aletheia</Eyebrow>
+      <Eyebrow number="06">A app Aletheia</Eyebrow>
 
       <div className="mt-8 grid gap-12 md:grid-cols-12 md:gap-16">
         <div className="md:col-span-7">

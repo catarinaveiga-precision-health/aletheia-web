@@ -1,72 +1,107 @@
 import { Section, Eyebrow, EditorialQuote } from './primitives'
 
 const markers = [
-  { label: 'DHEA-S', before: '78 µg/dL', after: '184 µg/dL' },
-  { label: 'Cortisol matinal', before: '4.2 µg/dL', after: '14.8 µg/dL' },
-  { label: 'Calprotectina fecal', before: '142 µg/g', after: '<30 µg/g' },
-  { label: 'TSH', before: '3.8 mUI/L', after: '1.6 mUI/L' },
-  { label: 'Ferritina', before: '12 ng/mL', after: '68 ng/mL' },
+  {
+    label: 'Vitamina D (25-OH)',
+    value: '21 ng/mL',
+    conventional: 'Normal (≥ 20)',
+    functional: 'Abaixo do alvo funcional (50–60)',
+  },
+  {
+    label: 'Ferritina',
+    value: '42 ng/mL',
+    conventional: 'Normal (15–150)',
+    functional: 'Sub-óptima em mulher sintomática (< 70)',
+  },
+  {
+    label: 'DHEA-S',
+    value: '1.8 µmol/L',
+    conventional: 'Normal (35–430 µg/dL)',
+    functional: '~40 % abaixo do óptimo funcional',
+  },
+  {
+    label: 'TSH',
+    value: '3.8 mUI/L',
+    conventional: 'Normal (0.4–4.5)',
+    functional: 'Acima do alvo funcional (< 2.5)',
+  },
+  {
+    label: 'HOMA-IR',
+    value: '1.84',
+    conventional: 'Não calculado de rotina',
+    functional: 'Sugestivo de sensibilidade insulínica reduzida',
+  },
 ]
 
 export function CaseStudy() {
   return (
     <Section warm narrow>
-      <Eyebrow number="05">Caso clínico</Eyebrow>
+      <Eyebrow number="03">Caso clínico — leitura</Eyebrow>
 
       <h2 className="mt-8 text-[clamp(2rem,4vw,2.5rem)] leading-[1.18] tracking-[-0.01em]">
-        M. — 41 anos. Sete meses{' '}
-        <span className="editorial-italic">no programa</span>.
+        Uma paciente.{' '}
+        <span className="editorial-italic">Os mesmos números</span>, duas
+        leituras diferentes.
       </h2>
 
       <p className="mt-8 text-[16px] leading-[1.7] text-[var(--color-body)]">
-        Chegou com fadiga matinal, ciclos irregulares e ansiedade que os
-        exames convencionais não justificavam. Encaminhada por colega.
-        Análises funcionais revelaram disbiose com inflamação intestinal
-        baixa, padrão de hipocortisolismo matinal e tiróide subóptima sem
-        critério clássico de patologia.
+        Chegou-me com fadiga, sono superficial, ciclo a desorganizar-se e a
+        sensação clara de que &ldquo;alguma coisa não está bem&rdquo;. Os
+        exames que trouxe estavam tecnicamente normais. Lidos no meu
+        consultório, não estavam.
       </p>
 
       <div className="mt-14 border-t border-[var(--color-gold)]/40">
-        <div className="grid grid-cols-[1.3fr_1fr_1fr] gap-6 border-b border-[var(--color-gold)]/40 py-5">
+        <div className="hidden grid-cols-[1.2fr_0.9fr_1.1fr_1.3fr] gap-4 border-b border-[var(--color-gold)]/40 py-5 md:grid">
           <span className="eyebrow">Marcador</span>
-          <span className="eyebrow">Início</span>
+          <span className="eyebrow">Valor</span>
+          <span className="eyebrow">Convencional</span>
           <span className="eyebrow text-[var(--color-gold-deep)]">
-            Mês 7
+            Funcional
           </span>
         </div>
 
-        {markers.map((marker) => (
+        {markers.map((m) => (
           <div
-            key={marker.label}
-            className="grid grid-cols-[1.3fr_1fr_1fr] gap-6 border-b border-[var(--color-gold)]/20 py-5"
+            key={m.label}
+            className="grid gap-y-3 border-b border-[var(--color-gold)]/20 py-5 md:grid-cols-[1.2fr_0.9fr_1.1fr_1.3fr] md:gap-4 md:py-6"
           >
-            <span className="font-[family-name:var(--font-display)] text-[1.05rem] text-[var(--color-ink)]">
-              {marker.label}
-            </span>
-            <span className="text-[15px] tabular-nums text-[var(--color-aux)]">
-              {marker.before}
+            <span className="font-[family-name:var(--font-display)] text-[1.05rem] leading-[1.3] text-[var(--color-ink)]">
+              {m.label}
             </span>
             <span className="text-[15px] tabular-nums text-[var(--color-ink)]">
-              {marker.after}
+              <span className="eyebrow mr-2 md:hidden">Valor</span>
+              {m.value}
+            </span>
+            <span className="text-[14px] leading-[1.55] text-[var(--color-aux)]">
+              <span className="eyebrow mr-2 md:hidden">Convencional</span>
+              {m.conventional}
+            </span>
+            <span className="text-[14px] leading-[1.55] text-[var(--color-body)]">
+              <span className="eyebrow mr-2 text-[var(--color-gold-deep)] md:hidden">
+                Funcional
+              </span>
+              {m.functional}
             </span>
           </div>
         ))}
       </div>
 
       <p className="mt-12 text-[16px] leading-[1.7] text-[var(--color-body)]">
-        Nos primeiros dois meses trabalhámos exclusivamente o intestino — sem
-        tocar no eixo hormonal. A reconstrução adrenal entrou ao terceiro
-        mês. O ajuste tiroideu, ao quinto. À sétima leitura, M. relata a
-        fadiga matinal resolvida e ciclos previsíveis pela primeira vez em
-        anos.
+        Lidos em conjunto, os números contavam outra história: vitamina D
+        bem abaixo do alvo, reserva adrenal a ceder, tiróide subóptima, e um
+        sinal precoce de resistência insulínica que a leitura convencional
+        nunca chegaria a ver. O corpo dela não estava a mentir — estava a
+        ser mal lido por intervalos desenhados para detectar doença
+        instalada, não disfunção em curso.
       </p>
 
       <div className="mt-14 border-l-2 border-[var(--color-gold)] pl-6 md:pl-8">
         <EditorialQuote>
-          A sequência fez tudo. Quando finalmente mexemos no hormonal, já
-          quase nada estava por resolver.
+          Antes de escolher o próximo passo, há que ler bem o ponto onde
+          estamos.
         </EditorialQuote>
-        <p className="eyebrow mt-5">M., paciente do programa</p>
+        <p className="eyebrow mt-5">Catarina Veiga</p>
       </div>
     </Section>
   )

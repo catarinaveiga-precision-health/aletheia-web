@@ -21,7 +21,7 @@ const blocks = [
 export function Hierarchy() {
   return (
     <Section warm>
-      <Eyebrow number="01">A hierarquia clínica</Eyebrow>
+      <Eyebrow number="05">A cascata clínica</Eyebrow>
 
       <h2 className="mt-8 max-w-[860px] text-[clamp(2rem,4.5vw,2.75rem)] leading-[1.18] tracking-[-0.01em]">
         Há uma <span className="editorial-italic">sequência</span> biológica.

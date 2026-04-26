@@ -9,8 +9,8 @@ const faqs = [
     a: 'Significa que, na leitura clínica das tuas análises e da nossa segunda consulta, o teu caso encaixa no que o programa Aletheia faz. O convite é a proposta formal — não uma sugestão genérica. Se vens daí, vens já com terreno preparado.',
   },
   {
-    q: 'E se eu disser que não — perco a relação clínica?',
-    a: 'Não. A relação clínica que já existe continua. Podes seguir em consultas avulso quando precisares, ou recusar o programa agora e voltar a considerá-lo mais tarde. O convite não tem prazo emocional.',
+    q: 'Vai mesmo funcionar no meu caso?',
+    a: 'Honestamente: não posso prometer. O que posso dizer é que, depois das duas consultas que tivemos, o teu caso encaixa no que o programa resolve — caso contrário não recebias o convite. O retorno clínico começa a ler-se a partir do segundo ou terceiro mês, com sinal mensurável (sono, energia, marcadores).',
   },
   {
     q: 'Posso experimentar um mês e desistir?',
@@ -18,7 +18,15 @@ const faqs = [
   },
   {
     q: 'E se preciso de mais que três meses?',
-    a: 'A duração não é fixa. Casos com mais camadas — autoimunidade activa, perimenopausa instável, exaustão adrenal profunda — pedem entre seis e doze meses para se reorganizarem. Definimos o horizonte no teu plano terapêutico, não num contrato.',
+    a: 'A duração não é fixa. Casos com mais camadas — autoimunidade activa, perimenopausa instável, baixa reserva adrenal profunda — pedem entre seis e doze meses para se reorganizarem. Definimos o horizonte no teu plano terapêutico, não num contrato.',
+  },
+  {
+    q: '€199 por mês — porquê este valor?',
+    a: 'É o que cobre coordenação clínica contínua, app, gestão activa do protocolo entre consultas e acesso a labs avançados com desconto de programa. Para referência: fica abaixo do custo de duas consultas avulso de especialista no mesmo mês — sem a integração entre elas. O preço é mensal; a lógica é clínica.',
+  },
+  {
+    q: 'E se eu disser que não — perco a relação clínica?',
+    a: 'Não. A relação clínica que já existe continua. Podes seguir em consultas avulso quando precisares, ou recusar o programa agora e voltar a considerá-lo mais tarde. O convite não tem prazo emocional.',
   },
   {
     q: 'A app é obrigatória?',
@@ -35,7 +43,7 @@ export function Faq() {
 
   return (
     <Section warm id="faq">
-      <Eyebrow number="07">Dúvidas frequentes</Eyebrow>
+      <Eyebrow number="11">Dúvidas frequentes</Eyebrow>
 
       <h2 className="mt-8 max-w-[760px] text-[clamp(2rem,4.5vw,2.75rem)] leading-[1.18] tracking-[-0.01em]">
         O que costuma{' '}
