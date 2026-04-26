@@ -33,7 +33,7 @@ export function Journey() {
     <Section>
       <div className="grid gap-16 md:grid-cols-12 md:gap-12">
         <div className="md:col-span-4">
-          <Eyebrow number="02">A jornada</Eyebrow>
+          <Eyebrow number="09">A jornada</Eyebrow>
           <h2 className="mt-8 text-[clamp(2rem,4vw,2.5rem)] leading-[1.18] tracking-[-0.01em]">
             O que acontece depois{' '}
             <span className="editorial-italic">de aceitares</span>.
