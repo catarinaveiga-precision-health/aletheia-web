@@ -15,7 +15,7 @@ const exclusions = [
 export function Investment() {
   return (
     <Section id="investimento">
-      <Eyebrow number="06">Investimento</Eyebrow>
+      <Eyebrow number="07">Investimento</Eyebrow>
 
       <div className="mt-10 grid gap-16 md:grid-cols-12 md:gap-20">
         <div className="md:col-span-5">

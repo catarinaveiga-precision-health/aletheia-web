@@ -36,7 +36,7 @@ const rows = [
 export function Comparison() {
   return (
     <Section>
-      <Eyebrow number="04">Programa vs. consulta avulso</Eyebrow>
+      <Eyebrow number="05">Programa vs. consulta avulso</Eyebrow>
 
       <h2 className="mt-8 max-w-[800px] text-[clamp(2rem,4.5vw,2.75rem)] leading-[1.18] tracking-[-0.01em]">
         A diferença não é de{' '}
