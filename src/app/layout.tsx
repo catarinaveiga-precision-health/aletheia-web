@@ -1,13 +1,38 @@
 import type { Metadata } from 'next'
+import { Playfair_Display, Inter, Cormorant_Garamond } from 'next/font/google'
 import './globals.css'
 
+const playfair = Playfair_Display({
+  subsets: ['latin'],
+  weight: ['400', '500', '600'],
+  style: ['normal', 'italic'],
+  variable: '--font-display',
+  display: 'swap',
+})
+
+const inter = Inter({
+  subsets: ['latin'],
+  weight: ['400', '500'],
+  variable: '--font-sans',
+  display: 'swap',
+})
+
+const cormorant = Cormorant_Garamond({
+  subsets: ['latin'],
+  weight: ['400', '500'],
+  style: ['italic'],
+  variable: '--font-italic',
+  display: 'swap',
+})
+
 export const metadata: Metadata = {
-  title: 'Aletheia — Medicina Funcional de Precisão',
+  title: 'Aletheia — Programa de Medicina Funcional Integrativa',
   description:
-    'Medicina funcional de precisão para mulheres que funcionam — mas que já não se reconhecem. Catarina Veiga.',
+    'Programa clínico privado, por convite, conduzido pela Dra. Catarina Veiga.',
+  robots: { index: false, follow: false },
   openGraph: {
-    title: 'Aletheia — Medicina Funcional de Precisão',
-    description: 'Os teus exames estão todos bons. Mas tu sabes que algo não está.',
+    title: 'Aletheia — Programa',
+    description: 'Programa clínico privado, por convite.',
     locale: 'pt_PT',
     type: 'website',
   },
@@ -19,10 +44,11 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="pt" className="h-full antialiased" style={{ backgroundColor: '#09120d' }}>
-      <body className="min-h-full flex flex-col" style={{ backgroundColor: '#09120d' }}>
-        {children}
-      </body>
+    <html
+      lang="pt"
+      className={`${playfair.variable} ${inter.variable} ${cormorant.variable}`}
+    >
+      <body>{children}</body>
     </html>
   )
 }
