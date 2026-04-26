@@ -35,7 +35,7 @@ export function Faq() {
 
   return (
     <Section warm id="faq">
-      <Eyebrow number="08">Dúvidas frequentes</Eyebrow>
+      <Eyebrow number="09">Dúvidas frequentes</Eyebrow>
 
       <h2 className="mt-8 max-w-[760px] text-[clamp(2rem,4.5vw,2.75rem)] leading-[1.18] tracking-[-0.01em]">
         O que costuma{' '}

@@ -38,6 +38,33 @@ export function Hero() {
             do que começámos.
           </p>
 
+          <ul className="mt-12 grid max-w-[760px] gap-x-10 gap-y-5 md:grid-cols-3">
+            {[
+              {
+                k: 'Cascata clínica',
+                v: 'Intestino → adrenais → hormonas, em sequência. Não em paralelo.',
+              },
+              {
+                k: 'Plano vivo',
+                v: 'Actualizado em tempo real, na app, entre consultas.',
+              },
+              {
+                k: 'Caixa de dúvidas',
+                v: 'Resposta no momento clínico certo. Não em horário comercial.',
+              },
+            ].map((b) => (
+              <li
+                key={b.k}
+                className="border-t border-[var(--color-gold)]/40 pt-4"
+              >
+                <p className="eyebrow text-[var(--color-gold-deep)]">{b.k}</p>
+                <p className="mt-2 text-[14px] leading-[1.5] text-[var(--color-body)]">
+                  {b.v}
+                </p>
+              </li>
+            ))}
+          </ul>
+
           <div className="mt-14 flex flex-col gap-4 sm:flex-row sm:items-center">
             <Cta href="#investimento" variant="primary">
               Subscrever o programa

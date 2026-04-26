@@ -11,7 +11,7 @@ const markers = [
 export function CaseStudy() {
   return (
     <Section warm narrow>
-      <Eyebrow number="05">Caso clínico</Eyebrow>
+      <Eyebrow number="06">Caso clínico</Eyebrow>
 
       <h2 className="mt-8 text-[clamp(2rem,4vw,2.5rem)] leading-[1.18] tracking-[-0.01em]">
         Andreia. Os exames diziam{' '}

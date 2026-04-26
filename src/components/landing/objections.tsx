@@ -18,7 +18,7 @@ const objections = [
 export function Objections() {
   return (
     <Section>
-      <Eyebrow number="07">Antes de decidires</Eyebrow>
+      <Eyebrow number="08">Antes de decidires</Eyebrow>
 
       <h2 className="mt-8 max-w-[820px] text-[clamp(2rem,4.5vw,2.75rem)] leading-[1.18] tracking-[-0.01em]">
         Três coisas que costumam{' '}
