@@ -26,13 +26,14 @@ const cormorant = Cormorant_Garamond({
 })
 
 export const metadata: Metadata = {
-  title: 'Aletheia — Programa de Medicina Funcional Integrativa',
+  title: 'Aletheia Health Precision Program — Catarina Veiga',
   description:
-    'Programa clínico privado, por convite, conduzido pela Dra. Catarina Veiga.',
+    'Exames normais. Sintomas reais. Há uma explicação bioquímica — e há um caminho. Programa clínico privado, por convite.',
   robots: { index: false, follow: false },
   openGraph: {
-    title: 'Aletheia — Programa',
-    description: 'Programa clínico privado, por convite.',
+    title: 'Aletheia Health Precision Program',
+    description:
+      'Exames normais. Sintomas reais. Há uma explicação bioquímica — e há um caminho.',
     locale: 'pt_PT',
     type: 'website',
   },

@@ -18,19 +18,24 @@ export function Hero() {
 
         <div className="max-w-[880px]">
           <p className="eyebrow mb-10 text-[var(--color-gold-deep)]">
-            Convite — Programa Aletheia
+            Convite — Aletheia Health Precision Program
           </p>
 
           <h1 className="font-[family-name:var(--font-display)] text-[clamp(2.75rem,7vw,4.75rem)] leading-[1.04] tracking-[-0.01em] text-[var(--color-ink)]">
-            O passo seguinte da{' '}
-            <span className="editorial-italic">tua decisão</span> clínica.
+            Os teus exames estão{' '}
+            <span className="editorial-italic">normais.</span>
+            <br />O teu corpo discorda.
           </h1>
 
-          <p className="mt-8 max-w-[620px] text-lg leading-[1.6] text-[var(--color-body)] md:text-xl">
+          <p className="mt-10 max-w-[640px] text-lg leading-[1.6] text-[var(--color-body)] md:text-xl">
+            Exames normais. Sintomas reais. Nenhuma resposta. Há uma
+            explicação bioquímica — e há um caminho.
+          </p>
+
+          <p className="mt-6 max-w-[620px] text-base leading-[1.65] text-[var(--color-aux)] md:text-lg">
             Recebeste este convite depois da segunda consulta, com a tua
-            proposta personalizada já em mãos. Esta página é o que vem a
-            seguir — o programa Aletheia, em continuidade com o que já
-            começámos.
+            proposta personalizada já em mãos. Esta página é a continuação
+            do que começámos.
           </p>
 
           <div className="mt-14 flex flex-col gap-4 sm:flex-row sm:items-center">

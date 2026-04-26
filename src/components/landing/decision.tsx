@@ -6,19 +6,18 @@ export function Decision() {
       <div className="mx-auto flex max-w-[840px] flex-col items-start text-left">
         <Eyebrow>α Decisão</Eyebrow>
 
-        <h2 className="mt-10 text-[clamp(2.25rem,5.5vw,3.5rem)] leading-[1.08] tracking-[-0.01em]">
-          Se já decidiste,{' '}
-          <span className="editorial-italic">aqui</span> é onde se começa.
+        <h2 className="mt-10 text-[clamp(2.5rem,6vw,4rem)] leading-[1.04] tracking-[-0.015em]">
+          <span className="editorial-italic">Estou</span> cá.
         </h2>
 
-        <p className="mt-8 max-w-[58ch] text-[16px] leading-[1.7] text-[var(--color-body)] md:text-[17px]">
-          Sem newsletter, sem app gratuita, sem terceira via. Subscreves o
-          programa, ou voltas ao convite com a tua dúvida.
+        <p className="mt-10 max-w-[58ch] text-[16px] leading-[1.7] text-[var(--color-body)] md:text-[17px]">
+          Quando estiveres pronta, este é o sítio. Sem newsletter, sem app
+          gratuita, sem terceira via.
         </p>
 
         <div className="mt-14">
           <Cta href="https://app.acuityscheduling.com" variant="primary" external>
-            Subscrever o programa Aletheia
+            Subscrever o programa
           </Cta>
         </div>
 

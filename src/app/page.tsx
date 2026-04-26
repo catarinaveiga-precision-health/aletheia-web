@@ -5,6 +5,7 @@ import { AppSection } from '@/components/landing/app-section'
 import { Comparison } from '@/components/landing/comparison'
 import { CaseStudy } from '@/components/landing/case-study'
 import { Investment } from '@/components/landing/investment'
+import { Objections } from '@/components/landing/objections'
 import { Faq } from '@/components/landing/faq'
 import { Decision } from '@/components/landing/decision'
 
@@ -18,6 +19,7 @@ export default function Home() {
       <Comparison />
       <CaseStudy />
       <Investment />
+      <Objections />
       <Faq />
       <Decision />
     </main>
