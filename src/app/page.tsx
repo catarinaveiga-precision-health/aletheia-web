@@ -1,6 +1,7 @@
 import { Hero } from '@/components/landing/hero'
 import { Philosophy } from '@/components/landing/philosophy'
 import { Hierarchy } from '@/components/landing/hierarchy'
+import { Pillars } from '@/components/landing/pillars'
 import { Audience } from '@/components/landing/audience'
 import { Journey } from '@/components/landing/journey'
 import { AppSection } from '@/components/landing/app-section'
@@ -19,6 +20,7 @@ export default function Home() {
       <Hero />
       <Philosophy />
       <Hierarchy />
+      <Pillars />
       <Audience />
       <InlineCta label="Se reconheces a tua leitura clínica nestes padrões." />
       <Journey />
