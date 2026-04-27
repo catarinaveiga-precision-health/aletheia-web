@@ -3,18 +3,18 @@ import { Section, Eyebrow, EditorialQuote, HairlineDivider } from './primitives'
 const blocks = [
   {
     number: 'I.',
-    title: 'Intestino e Absorção',
-    body: 'A primeira camada clínica. Permeabilidade, microbiota, SIBO, absorção de nutrientes. Sem este terreno em ordem, qualquer protocolo seguinte trabalha sobre solo instável.',
+    title: 'Fundação — Estilo de vida',
+    body: 'A base. Sono, nutrição, movimento, gestão de stress, vida relacional. É a camada onde a maioria das pacientes chega já em défice — e aquela em que a intervenção tem maior retorno por unidade de esforço. Sem isto em ordem, qualquer camada acima trabalha contra resistência.',
   },
   {
     number: 'II.',
-    title: 'Reconstrução Adrenal',
-    body: 'A camada da regulação interna. Eixo HPA, ritmo cortisol-DHEA, recuperação do sistema nervoso autónomo. É aqui que a fadiga deixa de ser sintoma e passa a ser sinal mensurável.',
+    title: 'Equilíbrio fisiológico',
+    body: 'Quando a base sustenta, abrem-se as camadas seguintes: microbiota e função intestinal, regulação glicémica e insulínica, eixos hormonais (tiróide, adrenais, sexuais), modulação imunitária. É aqui que costuma estar a explicação dos sintomas que a leitura convencional não nomeou.',
   },
   {
     number: 'III.',
-    title: 'Reequilíbrio Hormonal Profundo',
-    body: 'Só agora. Estrogénios, progesterona, tiróide, metabolismo. Quando o intestino absorve e as adrenais sustentam, o trabalho hormonal acontece com a profundidade que se procura.',
+    title: 'Intervenções dirigidas',
+    body: 'A camada mais específica. Suplementação cirúrgica, testes funcionais avançados (DUTCH, GI360, OAT, ODX), terapêuticas farmacológicas pontuais. Não são o ponto de partida — são o instrumento fino que a base e o equilíbrio fisiológico tornam possível.',
   },
 ]
 
@@ -24,9 +24,14 @@ export function Hierarchy() {
       <Eyebrow number="01">A hierarquia clínica</Eyebrow>
 
       <h2 className="mt-8 max-w-[860px] text-[clamp(2rem,4.5vw,2.75rem)] leading-[1.18] tracking-[-0.01em]">
-        Há uma <span className="editorial-italic">sequência</span> biológica.
-        E ela não é negociável.
+        Há uma <span className="editorial-italic">hierarquia</span>. E ela
+        começa pela base.
       </h2>
+
+      <p className="mt-6 max-w-[680px] text-base leading-[1.65] text-[var(--color-body)] md:text-lg">
+        Não há um único caminho biológico. Há uma ordem de prioridades que se
+        aplica a todas as pacientes — mesmo quando os detalhes mudam.
+      </p>
 
       <div className="mt-20 grid gap-12 md:grid-cols-3 md:gap-10">
         {blocks.map((block) => (
@@ -47,8 +52,8 @@ export function Hierarchy() {
 
       <div className="mt-24 max-w-[680px] md:mt-32">
         <EditorialQuote>
-          Trabalhar o hormonal sem tratar o intestino primeiro é trabalhar
-          contra a corrente.
+          A última camada não funciona sem as duas primeiras. Não há atalho
+          que não cobre depois.
         </EditorialQuote>
       </div>
     </Section>
