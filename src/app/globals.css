@@ -1,21 +1,30 @@
 @import "tailwindcss";
 
 @theme inline {
-  /* Brand palette (briefing 4.1) */
-  --color-ink: #1F1D1A;
-  --color-body: #5A5852;
-  --color-aux: #8A857D;
-  --color-cream: #FAF6EE;
-  --color-cream-warm: #F4ECDB;
-  --color-gold: #C6A573;
-  --color-gold-deep: #A88859;
-  --color-gold-soft: #D5BE99;
-  --color-champagne: #E8DCC0;
+  /* Brand palette — eclipse / forest / matcha / almond / off-white */
+  --color-ink: #1A3636;          /* eclipse — headings */
+  --color-body: #1F1A14;         /* dark — body text */
+  --color-aux: #8C8C7A;          /* warm grey — secondary text */
+  --color-cream: #FAF6F0;        /* off-white — main bg */
+  --color-cream-warm: #F5EEE3;   /* almond-xl — warm bg sections */
+  --color-gold: #D6BD98;         /* almond — borders, accents */
+  --color-gold-deep: #677D6A;    /* matcha — eyebrow accent, section numbers */
+  --color-gold-soft: #EDE0CC;    /* almond-light */
+  --color-champagne: #EDE0CC;    /* almond-light */
 
-  /* Type stack (briefing 4.2) */
-  --font-display: var(--font-display), "Playfair Display", Georgia, serif;
-  --font-italic: var(--font-italic), "Cormorant Garamond", Georgia, serif;
+  /* Direct palette tokens for new dark-section work */
+  --color-eclipse: #1A3636;
+  --color-forest: #40534C;
+  --color-matcha: #677D6A;
+  --color-almond: #D6BD98;
+  --color-almond-light: #EDE0CC;
+  --color-off-white: #FAF6F0;
+
+  /* Type stack */
+  --font-display: var(--font-display), "Fraunces", Georgia, serif;
+  --font-italic: var(--font-display), "Fraunces", Georgia, serif;
   --font-sans: var(--font-sans), "Inter", system-ui, sans-serif;
+  --font-mono: var(--font-mono), "JetBrains Mono", ui-monospace, monospace;
 }
 
 :root {
@@ -25,7 +34,7 @@
 @layer base {
   html {
     font-family: var(--font-sans);
-    color: var(--color-ink);
+    color: var(--color-body);
     background-color: var(--color-cream);
     scroll-behavior: smooth;
     -webkit-font-smoothing: antialiased;
@@ -41,30 +50,30 @@
   }
 
   ::selection {
-    background-color: var(--color-gold-soft);
-    color: var(--color-ink);
+    background-color: var(--color-almond);
+    color: var(--color-eclipse);
   }
 
   h1, h2, h3, h4 {
     font-family: var(--font-display);
     color: var(--color-ink);
-    font-weight: 400;
+    font-weight: 500;
     letter-spacing: -0.01em;
   }
 }
 
 @utility eyebrow {
   font-family: var(--font-sans);
-  font-size: 11px;
-  font-weight: 500;
-  letter-spacing: 0.28em;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.3em;
   text-transform: uppercase;
-  color: var(--color-aux);
+  color: var(--color-matcha);
 }
 
 @utility editorial-italic {
-  font-family: var(--font-italic);
+  font-family: var(--font-display);
   font-style: italic;
   font-weight: 400;
-  color: var(--color-gold-deep);
+  color: var(--color-forest);
 }

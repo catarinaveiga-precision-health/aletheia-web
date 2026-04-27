@@ -1,10 +1,10 @@
 import type { Metadata } from 'next'
-import { Playfair_Display, Inter, Cormorant_Garamond } from 'next/font/google'
+import { Fraunces, Inter, JetBrains_Mono } from 'next/font/google'
 import './globals.css'
 
-const playfair = Playfair_Display({
+const fraunces = Fraunces({
   subsets: ['latin'],
-  weight: ['400', '500', '600'],
+  weight: ['300', '400', '500', '600', '900'],
   style: ['normal', 'italic'],
   variable: '--font-display',
   display: 'swap',
@@ -12,16 +12,15 @@ const playfair = Playfair_Display({
 
 const inter = Inter({
   subsets: ['latin'],
-  weight: ['400', '500'],
+  weight: ['300', '400', '500', '600'],
   variable: '--font-sans',
   display: 'swap',
 })
 
-const cormorant = Cormorant_Garamond({
+const jetbrainsMono = JetBrains_Mono({
   subsets: ['latin'],
   weight: ['400', '500'],
-  style: ['italic'],
-  variable: '--font-italic',
+  variable: '--font-mono',
   display: 'swap',
 })
 
@@ -47,7 +46,7 @@ export default function RootLayout({
   return (
     <html
       lang="pt"
-      className={`${playfair.variable} ${inter.variable} ${cormorant.variable}`}
+      className={`${fraunces.variable} ${inter.variable} ${jetbrainsMono.variable}`}
     >
       <body>{children}</body>
     </html>
